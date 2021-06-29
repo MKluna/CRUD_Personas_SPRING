@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-    <h1>Inicio</h1>
+    <header th:replace="layaout/plantilla :: header" />
     <a th:href="@{/agregar}">Crear Persona</a>
     <div th:if="${personas != null and !personas.empty}">
       <table border="1">
@@ -37,5 +37,6 @@
     <div th:if="${personas == null or personas.empty}">
       La lista de personas está vacía
     </div>
+    <footer th:replace="layaout/plantilla :: footer" />
   </body>
 </html>
