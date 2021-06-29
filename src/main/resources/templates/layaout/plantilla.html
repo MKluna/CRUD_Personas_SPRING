@@ -8,10 +8,10 @@
 </head>
 <body>
   <header th:fragment="header">
-    <h1>Control de Clientes</h1>
+    <h1 th:text="#{plantilla.titulo}"></h1>
   </header>
   <footer th:fragment="footer">
-    <p>Derechos Reservados &#169</p>
+    <p>[[#{plantilla.pie-pagina}]]&#169</p>
   </footer>
 </body>
 </html>

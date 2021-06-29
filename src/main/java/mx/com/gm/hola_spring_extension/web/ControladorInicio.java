@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import lombok.extern.slf4j.Slf4j;
 import mx.com.gm.hola_spring_extension.domain.Persona;
 import mx.com.gm.hola_spring_extension.servicio.PersonaService;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @Slf4j
