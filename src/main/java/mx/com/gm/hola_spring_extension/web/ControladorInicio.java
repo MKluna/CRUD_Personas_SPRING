@@ -28,6 +28,12 @@ public class ControladorInicio {
     log.info("Desde el controlador Spring MVC");
     log.info("Usuario logeado : " + user);
     model.addAttribute("personas", personas);
+    var saldoTotal = 0D;
+    for (var p : personas) {
+      saldoTotal += p.getSaldo();
+    }
+    model.addAttribute("saldoTotal", saldoTotal);
+    model.addAttribute("totalClientes", personas.size());
     return "index";
   }
 
